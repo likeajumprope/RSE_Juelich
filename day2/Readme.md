@@ -87,7 +87,7 @@ Below you are given two options to clone from remote:
 
 ## 2. 💻 Clone Your Fork (make a local copy)
 
-This option uses teh terminal (MacOS, UNIX, Gitbash)
+This option uses the terminal (MacOS, UNIX, Gitbash)
 
 > NOTE: if you use WINDOWS, install GitBash first. Execute all commands in GitBash.
 
@@ -146,6 +146,8 @@ git push origin main
 ```
 
 Use the branch name you're working on (e.g., `main`, `dev`, or `feature-branch`).
+
+That’s it! You've submitted your contribution.
 
 </details>
 
