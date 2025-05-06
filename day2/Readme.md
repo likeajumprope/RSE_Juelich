@@ -2,12 +2,10 @@ Welcome to Day 2!
 
 Today, we’ll dive into two hands-on exercises to sharpen your collaboration and coding skills:
 
-
 <details>
 <summary>Activity 1 - More Git</summary>
 
 # 🔧 Exercise 1: More Git
-
 
 <details>
 <summary>Optional - setting up a ssh key</summary>
@@ -73,26 +71,36 @@ You should see a success message like:
 ```bash
 Hi your_username! You've successfully authenticated...
 ```
+
 </details>
 
 # 🛠️ Contributing to This Project (Step-by-Step)
 
 ## 1. 🔱 Fork the Repository
 
-Go to the original repository on GitHub (provided by your instructor) and click the **"Fork"** button in the top-right corner.  
-This will create **your own copy** of the repository under your GitHub account.
+You probably already have a fork of the course repo. Skip if you have.
 
 ---
 
-## 2. 💻 Clone Your Fork
+<details>
+<summary>Option 1 - Using the command line</summary>
 
-Open a terminal and run:
+## 2. 💻 Clone Your Fork (make a local copy)
+
+Use the terminal (MacOS, UNIX, Gitbash)
+
+> NOTE: if you use WINDOWS, install GitBash first. Execute all commands in GitBash.
+
+Open a terminal (locally) and run:
 
 ```bash
 git clone git@github.com:your-username/repo-name.git
 ```
 
 Replace `your-username` and `repo-name` with your actual GitHub username and repository name.  
+
+You can also copy the url from the green `CODE` button on Github online.
+
 If you're using HTTPS instead of SSH:
 
 ```bash
@@ -118,6 +126,8 @@ For example:
 nano yourfile.md
 ```
 
+You can also edit the file in any other code or file editor.
+
 ---
 
 ## 5. ✅ Stage and Commit the Changes
@@ -137,7 +147,59 @@ git push origin main
 
 Use the branch name you're working on (e.g., `main`, `dev`, or `feature-branch`).
 
+</details>
+
+<details>
+<summary>Option 2 - Using Github Desktop</summary>
+
+### ▶️ Clone Directly from GitHub
+
+1. Go to your forked repository on [GitHub.com](https://github.com).
+2. Click the green **"Code"** button.
+3. In the dropdown, click **"Open with GitHub Desktop"**.
+4. This will launch **GitHub Desktop** and ask you where to save the local copy.
+5. Choose your local path and click **Clone**.
+
+> 💡 You can use **HTTPS** or **SSH** — both work. Make sure your GitHub Desktop is set up with the correct credentials (especially for SSH).
+
+## 3. 📂 Open the Project Directory
+
+After cloning, GitHub Desktop automatically loads the project.
+
+- You can open the local folder via **Repository → Show in Finder/Explorer**.
+- Or open it in a code editor like VSCode or PyCharm.
+
 ---
+
+## 4. 🔧 Make Some Changes
+
+Edit your files using any editor you like (e.g., VSCode, Sublime, Atom).
+
+Example changes:
+
+- Edit `README.md`
+- Add a new script
+- Fix a bug in a Python file
+
+GitHub Desktop will automatically detect changes.
+
+---
+
+## 5. ✅ Stage and Commit the Changes
+
+1. Go to **GitHub Desktop**.
+2. See all file changes under the **Changes** tab.
+3. Add a **summary** for the commit (e.g., `Update README`).
+4. Click **Commit to `main`** (or whichever branch you’re working on).
+
+---
+
+## 6. 🚀 Push to Your Fork (GitHub Remote)
+
+1. After committing, click the **Push origin** button in the top bar.
+2. Your changes will be uploaded to your GitHub repository.
+
+> ✅ You can confirm your changes on GitHub by refreshing the repo page.
 
 ## 7. 🔁 Make a Pull Request
 
@@ -149,13 +211,19 @@ Use the branch name you're working on (e.g., `main`, `dev`, or `feature-branch`)
 
 ---
 
-That’s it! You've submitted your contribution. 
+That’s it! You've submitted your contribution.
+
+</details>
 
 </details>
 
 <details>
-<summary>Activity2 - Setting up and organizing a coding project</summary> 
+<summary>Activity2 - Adding a remote</summary>
 
+</details>
+
+<details>
+<summary>Activity3 - Setting up and organizing a coding project</summary>
 
 # 🧪 Mini Project (Day 2): Analyzing Study Habits and Performance
 
@@ -174,12 +242,8 @@ You can run the provided Jupyter notebook template here:
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-
 > ⚠️ **Warning:** Jupyter notebooks opened directly in the browser **do not save your work!**
 To avoid losing progress, **save a copy to your Google Drive** (if logged into a Google account) or **download a local copy.**
-
-
-
 
 ---
 
@@ -197,6 +261,7 @@ Organize your project like this:
 ├── .gitignore            # Files/folders to ignore in version control
 ├── README.md             # Project overview and how to run it
 ```
+
 > 📌 **Tip**: Never modify the raw data directly. Always save processed data to `data/clean/`.
 
 ---
@@ -205,7 +270,7 @@ Organize your project like this:
 
 We will practice using git in the Jupyter notebook. In Jupyter notebook, you can write system commands with `!` at the beginning of the line.
 
-For example: 
+For example:
 
 ` ! command `
 
@@ -218,12 +283,13 @@ For example:
 `!git status`
 
 ## 📝 Step 3: Create a README.md for your project
+
 Create a README.md file for your project.
 It should include:
+
 - Project title and description
 - Instructions on how to run your scripts
 - Dependencies and setup instructions
-
 
 ## 🚫 Step 4: Modify your .gitignre file
 
@@ -233,12 +299,10 @@ Example:
 An example could look like:
 
 data/raw/
-__pycache__/
+**pycache**/
 *.ipynb_checkpoints/
 
-
-
-## 💾 Step 5. Commit your code regularly 
+## 💾 Step 5. Commit your code regularly
 
 Use meaningful commit messages:
 
@@ -248,10 +312,12 @@ Use meaningful commit messages:
 ## 🛠️ Step 6: Write modular functions
 
 ### Step 6.1: clean your data
+
 Write a function to clean your data one of the cells of the Jupyter notebook.
-Write a function `clean_data.py` in `src`. 
+Write a function `clean_data.py` in `src`.
 
 In both cases:
+
 - Load the dataset (`data/raw/student_habits_performance.csv`) using `pandas`
 - Handle missing values (e.g., drop rows with NaN)
 - Save the cleaned dataset to `data/clean/cleaned_data.csv`
@@ -262,12 +328,14 @@ If needed, install libraries using:
 
 `!pip install pandas`
 
->  ✨ Tip: Write clear function names and use code comments to describe what your functions do.
+> ✨ Tip: Write clear function names and use code comments to describe what your functions do.
 
 ## 📊 Step 6.2: Visualize study  habits
+
 - Create a function that visualizes study habits. Do it again, first in the cell of the Jupyter notebook. Then create a file src/plot_mydata.py for it.
 
 In both cases:
+
 - Use `matplotlib` to visualize study habits
 - Save your figure to results/study_habits.png
 - Include axis labels, a title, and a legend if needed
@@ -280,6 +348,7 @@ Create a file:
 report/study_habits.md
 
 Your report should:
+
 - Briefly summarize your findings
 - Include your figure (link it using Markdown)
 
@@ -288,11 +357,12 @@ Example of linking a figure in markdown:
 `![Study Habits by Gender](../results/study_habits.png)`
 
 ## ⚙️ Step 8:  Document your environment
+
 Export your code to a requirements.txt file
 
 `!pip freeze > requirements.txt`
 
-## Step 9. Create a make file 
+## Step 9. Create a make file
 
 Create a simple Makefile to automate steps such as cleaning, running analysis, and generating figures.
 
@@ -301,13 +371,15 @@ Example structure:
 `all: clean_data plot_data
 
 clean_data:
-	python src/clean_data.py
+ python src/clean_data.py
 
 plot_data:
-	python src/plot_mydata.py`
+ python src/plot_mydata.py`
 
 ## ✅ Step 10: Final Checklist
+
 Make sure your project:
+
 - Uses a clean and modular folder structure
 - Preserves raw data without modification
 - Contains code with comments
