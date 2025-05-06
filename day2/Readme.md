@@ -1,11 +1,11 @@
-Welcome to Day 2!
+# Welcome to Day 2!
 
 Today, we’ll dive into two hands-on exercises to sharpen your collaboration and coding skills:
 
 <details>
 <summary>Activity 1 - Cloning from remote</summary>
 
-# 🔧 Exercise 1: More Git
+# 🔧 Cloning from remote
 
 <details>
 <summary>Optional - setting up a ssh key</summary>
@@ -74,20 +74,20 @@ Hi your_username! You've successfully authenticated...
 
 </details>
 
-# 🛠️ Contributing to This Project (Step-by-Step)
+# 🛠️ Cloning from remote (Step-by-Step)
 
 ## 1. 🔱 Fork the Repository
 
 You probably already have a fork of the course repo. Skip if you have.
+Below you are given two options to clone from remote:
 
----
 
 <details>
 <summary>Activity 1 Option 1 - Using the command line</summary>
 
 ## 2. 💻 Clone Your Fork (make a local copy)
 
-Use the terminal (MacOS, UNIX, Gitbash)
+This option uses teh terminal (MacOS, UNIX, Gitbash)
 
 > NOTE: if you use WINDOWS, install GitBash first. Execute all commands in GitBash.
 
@@ -152,7 +152,7 @@ Use the branch name you're working on (e.g., `main`, `dev`, or `feature-branch`)
 <details>
 <summary>Activity 1 Option 2 - Using Github Desktop</summary>
 
-### ▶️ Clone Directly from GitHub
+### 2.▶️ Clone Directly from GitHub
 
 1. Go to your forked repository on [GitHub.com](https://github.com).
 2. Click the green **"Code"** button.
