@@ -373,7 +373,7 @@ Use meaningful commit messages:
 ! git add .
 ! git commit -m "Initial commit: project structure"
 
-## 🛠️ Step 6: Write modular functions
+## 🛠️ Step 6: Good coding practices
 
 ### Step 6.1: Modularity
 
