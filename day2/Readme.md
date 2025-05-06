@@ -222,7 +222,7 @@ That’s it! You've submitted your contribution.
 <br>
 
 <details>
-<summary>Activity2 - Adding a remote</summary>
+<summary>Activity 2 - Adding a remote</summary>
 
 # 🔗 Adding a Remote to a lcoal Git Repository
 
@@ -287,7 +287,7 @@ git push -u origin main       # Push code to GitHub
 We will also work on  hands-on exercises to practice good coding practices:<br><br>
 
 <details>
-<summary>Activity3 - Setting up and organizing a coding project</summary>
+<summary>Activity 3 - Setting up and organizing a coding project</summary>
 
 # 🧪 Mini Project (Day 2): Analyzing Study Habits and Performance
 
@@ -375,12 +375,11 @@ Use meaningful commit messages:
 
 ## 🛠️ Step 6: Write modular functions
 
-### Step 6.1: clean your data
+### Step 6.1: Modularity
 
-#### 6.1.1 Write a function to clean your data in one of the cells of the Jupyter notebook. (see notebook)
-#### 6.1.2 Write a function `clean_data.py` in `src`. (see notebook/Colab)
+#### 6.1.1 Write a `clean_data` function to clean your data in one of the cells of the Jupyter notebook. (see notebook).
 
-In both cases:
+The function should:
 
 - Load the dataset (`data/raw/student_habits_performance.csv`) using `pandas`
 - Handle missing values (e.g., drop rows with NaN)
@@ -388,7 +387,61 @@ In both cases:
 
 >✨ Write clear function names and use docstrings to describe what your functions do.
 
-Run the function both in the code cell and as import into the jupyter notebook.
+Run the function in the cell of the Jupyter notebook.
+
+#### 6.1.2 Write a `plot_data` function that visualizes study habits, in of the cells of the Jupyter notebook. (see notebook)
+
+The function should:
+
+-  Use `matplotlib` to visualize study habits (choose something nice to plot)
+- Save your figure to results/study_habits.png
+- Include axis labels, a title, and a legend if needed
+
+> ✍️ Add a code comments and docstrings to your plotting function and comment the main steps (e.g., load data, create figure, save figure).
+
+### Step 6.2: Importing and packaging
+
+#### 6.1.2 Put the cleaning function into a file `clean_data.py` in `src`. (see notebook).
+
+#### 6.1.2 Put the plotting function into a file `ploy_data.py` in `src`. (see notebook).
+
+### 6.1.3 Prepare the .py files to be run.
+
+In order to execute the functions from the files in the `src` folders, we need to add two more things:
+
+1. A empty `__init__.py` file to the `src` folder. This makes your folder a **package** and allows for importing functions.
+2. A `__main__` function at the bottom of each file. This allows for arguments to be passed to the function when running the function from the command line.
+
+Create the `__init__.py` file.
+
+Add the following to the clean_data.py file:
+
+```python
+if __name__ == "__main__":
+
+    import sys
+
+    clean_data(sys.argv[1], sys.argv[2]) # adjust name if needed
+    
+```
+
+Add the following to the plot_data.py file
+
+```python
+if __name__ == "__main__":
+
+    import sys
+
+    plot_data(sys.argv[1]) # or change the name if your function has a different name
+```
+
+Now you can import the functions, for example via:
+`from src.clean_data import clean_data`
+
+You can run them after imported, but you can also run them directly via the command line via:
+
+`! python src/clean_data.py input output`
+
 
 If needed, install libraries using:
 
@@ -397,17 +450,12 @@ If needed, install libraries using:
 
 ### 📊 Step 6.2: Visualize study  habits
 
-#### 6.2.1 Write a function that visualizes study habits in of the cells of the Jupyter notebook. (see notebook)
+
 #### 6.1.2 Write a function `plot_data.py` in `src`. (see notebook/Colab)
 
 In both cases:
 
-- Use `matplotlib` to visualize study habits
-- Save your figure to results/study_habits.png
-- Include axis labels, a title, and a legend if needed
-
-> ✍️ Add a code comments and docstrings to your plotting function and comment the main steps (e.g., load data, create figure, save figure).
-
+-
 Run the functions both as part of the code cell and as import into the jupyter notebook.
 
 ## 📝 Step 7: Write a Summary Report
@@ -459,6 +507,7 @@ Make sure your project:
 - Documents the environment (e.g., requirements.txt)
 
 </details>
+
 <br>
 <a target="_blank" href="https://colab.research.google.com/github/likeajumprope/RSE_Juelich/blob/main/day2/Day2.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
