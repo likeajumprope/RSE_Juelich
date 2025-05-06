@@ -219,6 +219,8 @@ That’s it! You've submitted your contribution.
 
 </details>
 
+<br>
+
 <details>
 <summary>Activity2 - Adding a remote</summary>
 
