@@ -353,7 +353,7 @@ It should include:
 - Instructions on how to run your scripts
 - Dependencies and setup instructions
 
-## 🚫 Step 4: Modify your .gitignre file
+## 🚫 Step 4: Modify your .gitignore file
 
 Edit your .gitignore to exclude raw data and system-specific files.
 Example:
@@ -375,8 +375,8 @@ Use meaningful commit messages:
 
 ### Step 6.1: clean your data
 
-Write a function to clean your data one of the cells of the Jupyter notebook.
-Write a function `clean_data.py` in `src`.
+#### 6.1.1 Write a function to clean your data in one of the cells of the Jupyter notebook. (see notebook)
+#### 6.1.2 Write a function `clean_data.py` in `src`. (see notebook/Colab)
 
 In both cases:
 
@@ -384,17 +384,19 @@ In both cases:
 - Handle missing values (e.g., drop rows with NaN)
 - Save the cleaned dataset to `data/clean/cleaned_data.csv`
 
-✨ Tip: Write clear function names and use docstrings to describe what your functions do.
+>✨ Write clear function names and use docstrings to describe what your functions do.
+
+Run the function both in the code cell and as import into the jupyter notebook.
 
 If needed, install libraries using:
 
 `!pip install pandas`
 
-> ✨ Tip: Write clear function names and use code comments to describe what your functions do.
 
-## 📊 Step 6.2: Visualize study  habits
+### 📊 Step 6.2: Visualize study  habits
 
-- Create a function that visualizes study habits. Do it again, first in the cell of the Jupyter notebook. Then create a file src/plot_mydata.py for it.
+#### 6.2.1 Write a function that visualizes study habits in of the cells of the Jupyter notebook. (see notebook)
+#### 6.1.2 Write a function `plot_data.py` in `src`. (see notebook/Colab)
 
 In both cases:
 
@@ -402,7 +404,9 @@ In both cases:
 - Save your figure to results/study_habits.png
 - Include axis labels, a title, and a legend if needed
 
-> ✍️ Add a code comments to your plotting function and comment the main steps (e.g., load data, create figure, save figure).
+> ✍️ Add a code comments and docstrings to your plotting function and comment the main steps (e.g., load data, create figure, save figure).
+
+Run the functions both as part of the code cell and as import into the jupyter notebook.
 
 ## 📝 Step 7: Write a Summary Report
 
