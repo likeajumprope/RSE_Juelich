@@ -222,6 +222,63 @@ That’s it! You've submitted your contribution.
 <details>
 <summary>Activity2 - Adding a remote</summary>
 
+# 🔗 Adding a Remote to a lcoal Git Repository
+
+This guide walks you through connecting a local project to a remote repository on GitHub using either the **Terminal** or **GitHub Desktop**.
+
+<details>
+<summary>Activity 2 Option 1: Adding a remote using the Terminal</summary>
+
+# 🖥️ Version 1: Using the Terminal (Command Line)
+
+## 1️⃣ Create a New Remote Repository on GitHub
+
+> ✅  If you want to push a local repository to Github using the Command line, you  have to create an empty online target repository first.
+
+1. Go to [https://github.com](https://github.com).
+2. Click the **“+”** in the top right → **New repository**.
+3. Name your repository (e.g., `my-project`).
+4. Choose **Public** 
+5. **Do not** initialize with a README, `.gitignore`, or license if pushing an existing repo.
+6. Click **Create repository**.
+7. Copy the repo URL (either **HTTPS** or **SSH**) from the next page.
+
+## Connect your local project/folder
+
+For the sake of this exercise, you can create a simple folder with a test file.
+
+```bash
+cd path/to/your/project       # move into your folder
+git init                      # Initialize Git repo if not already done
+git add .                     # Stage all files
+git commit -m "Initial commit"
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+git branch -M main            # Rename default branch to main
+git push -u origin main       # Push code to GitHub
+```
+
+</details>
+
+<details>
+<summary>Activity 2 Option 2: Adding a remote using Github Desktop</summary>
+
+
+## 🖱️ Version 2: Using GitHub Desktop
+
+###  Connect/Publish/Push your local folder
+1. Open **GitHub Desktop**.
+2. Go to **File → Add Local Repository**.
+3. Choose your folder and click **Add Repository**.
+4. Click **Publish repository** (top bar).
+5. Fill in name and description.
+6. Choose "Private" if needed.
+7. Click **Publish Repository** — GitHub Desktop sets up the remote and pushes.
+
+
+> ✅ GitHub Desktop automatically connects the local and remote repositories.
+
+</details>
+
 </details>
 
  <br>
