@@ -1,4 +1,4 @@
-# 💻 Practicing GitHub (Day 1)
+# 💻 Practicing GitHub (Day 1) chanyi
 
 Welcome to **Day 1** of our **Research Software Engineering course**!  
 Today, we’ll practice the **foundational skills for collaborating on GitHub**:  
