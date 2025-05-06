@@ -1,6 +1,6 @@
 # Welcome to Day 2!
 
-Today, we’ll dive into two hands-on exercises to sharpen your collaboration and coding skills:
+Today, we’ll dive into two hands-on exercises to further sharpen your git skills:
 
 <details>
 <summary>Activity 1 - Cloning from remote</summary>
@@ -224,6 +224,9 @@ That’s it! You've submitted your contribution.
 
 </details>
 
+ <br>
+We will also work on  hands-on exercises to practice good coding practices:<br><br>
+
 <details>
 <summary>Activity3 - Setting up and organizing a coding project</summary>
 
@@ -393,7 +396,7 @@ Make sure your project:
 - Documents the environment (e.g., requirements.txt)
 
 </details>
-
+<br>
 <a target="_blank" href="https://colab.research.google.com/github/likeajumprope/RSE_Juelich/blob/main/day2/Day2.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
