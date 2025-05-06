@@ -3,7 +3,7 @@ Welcome to Day 2!
 Today, we’ll dive into two hands-on exercises to sharpen your collaboration and coding skills:
 
 <details>
-<summary>Activity 1 - More Git</summary>
+<summary>Activity 1 - Cloning from remote</summary>
 
 # 🔧 Exercise 1: More Git
 
@@ -83,7 +83,7 @@ You probably already have a fork of the course repo. Skip if you have.
 ---
 
 <details>
-<summary>Option 1 - Using the command line</summary>
+<summary>Activity 1 Option 1 - Using the command line</summary>
 
 ## 2. 💻 Clone Your Fork (make a local copy)
 
@@ -150,7 +150,7 @@ Use the branch name you're working on (e.g., `main`, `dev`, or `feature-branch`)
 </details>
 
 <details>
-<summary>Option 2 - Using Github Desktop</summary>
+<summary>Activity 1 Option 2 - Using Github Desktop</summary>
 
 ### ▶️ Clone Directly from GitHub
 
