@@ -10,3 +10,4 @@ add.py
 test_*.py
 day2/Day2.mlx
 day3/reproducible-research-project_day_3
+Slides/*
