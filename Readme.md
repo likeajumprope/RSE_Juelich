@@ -75,7 +75,7 @@ This is the training respository for the JuDocs course for Research Software Eng
 
 </details>
 
-## All material can be found [here]
+## All material can be found [here](Slides)
 
 ## Running examples
 
