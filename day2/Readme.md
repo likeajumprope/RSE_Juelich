@@ -1,13 +1,16 @@
-Welcome to Day 2, Chantal!
+
 
 Today, we’ll dive into two hands-on exercises to sharpen your collaboration and coding skills:
 
+# Welcome to Day 2!
+
+
+Today, we’ll dive into two hands-on exercises to further sharpen your git skills:
 
 <details>
-<summary>Activity 1 - More Git</summary>
+<summary>Activity 1 - Cloning from remote</summary>
 
-# 🔧 Exercise 1: More Git
-
+# 🔧 Cloning from remote
 
 <details>
 <summary>Optional - setting up a ssh key</summary>
@@ -73,26 +76,36 @@ You should see a success message like:
 ```bash
 Hi your_username! You've successfully authenticated...
 ```
+
 </details>
 
-# 🛠️ Contributing to This Project (Step-by-Step)
+# 🛠️ Cloning from remote (Step-by-Step)
 
 ## 1. 🔱 Fork the Repository
 
-Go to the original repository on GitHub (provided by your instructor) and click the **"Fork"** button in the top-right corner.  
-This will create **your own copy** of the repository under your GitHub account.
+You probably already have a fork of the course repo. Skip if you have.
+Below you are given two options to clone from remote:
 
----
 
-## 2. 💻 Clone Your Fork
+<details>
+<summary>Activity 1 Option 1 - Using the command line</summary>
 
-Open a terminal and run:
+## 2. 💻 Clone Your Fork (make a local copy)
+
+This option uses the terminal (MacOS, UNIX, Gitbash)
+
+> NOTE: if you use WINDOWS, install GitBash first. Execute all commands in GitBash.
+
+Open a terminal (locally) and run:
 
 ```bash
 git clone git@github.com:your-username/repo-name.git
 ```
 
 Replace `your-username` and `repo-name` with your actual GitHub username and repository name.  
+
+You can also copy the url from the green `CODE` button on Github online.
+
 If you're using HTTPS instead of SSH:
 
 ```bash
@@ -118,6 +131,8 @@ For example:
 nano yourfile.md
 ```
 
+You can also edit the file in any other code or file editor.
+
 ---
 
 ## 5. ✅ Stage and Commit the Changes
@@ -137,7 +152,61 @@ git push origin main
 
 Use the branch name you're working on (e.g., `main`, `dev`, or `feature-branch`).
 
+That’s it! You've submitted your contribution.
+
+</details>
+
+<details>
+<summary>Activity 1 Option 2 - Using Github Desktop</summary>
+
+### 2.▶️ Clone Directly from GitHub
+
+1. Go to your forked repository on [GitHub.com](https://github.com).
+2. Click the green **"Code"** button.
+3. In the dropdown, click **"Open with GitHub Desktop"**.
+4. This will launch **GitHub Desktop** and ask you where to save the local copy.
+5. Choose your local path and click **Clone**.
+
+> 💡 You can use **HTTPS** or **SSH** — both work. Make sure your GitHub Desktop is set up with the correct credentials (especially for SSH).
+
+## 3. 📂 Open the Project Directory
+
+After cloning, GitHub Desktop automatically loads the project.
+
+- You can open the local folder via **Repository → Show in Finder/Explorer**.
+- Or open it in a code editor like VSCode or PyCharm.
+
 ---
+
+## 4. 🔧 Make Some Changes
+
+Edit your files using any editor you like (e.g., VSCode, Sublime, Atom).
+
+Example changes:
+
+- Edit `README.md`
+- Add a new script
+- Fix a bug in a Python file
+
+GitHub Desktop will automatically detect changes.
+
+---
+
+## 5. ✅ Stage and Commit the Changes
+
+1. Go to **GitHub Desktop**.
+2. See all file changes under the **Changes** tab.
+3. Add a **summary** for the commit (e.g., `Update README`).
+4. Click **Commit to `main`** (or whichever branch you’re working on).
+
+---
+
+## 6. 🚀 Push to Your Fork (GitHub Remote)
+
+1. After committing, click the **Push origin** button in the top bar.
+2. Your changes will be uploaded to your GitHub repository.
+
+> ✅ You can confirm your changes on GitHub by refreshing the repo page.
 
 ## 7. 🔁 Make a Pull Request
 
@@ -149,13 +218,81 @@ Use the branch name you're working on (e.g., `main`, `dev`, or `feature-branch`)
 
 ---
 
-That’s it! You've submitted your contribution. 
+That’s it! You've submitted your contribution.
+
+</details>
+
+</details>
+
+<br>
+
+<details>
+<summary>Activity 2 - Adding a remote</summary>
+
+# 🔗 Adding a Remote to a lcoal Git Repository
+
+This guide walks you through connecting a local project to a remote repository on GitHub using either the **Terminal** or **GitHub Desktop**.
+
+<details>
+<summary>Activity 2 Option 1: Adding a remote using the Terminal</summary>
+
+# 🖥️ Version 1: Using the Terminal (Command Line)
+
+## 1️⃣ Create a New Remote Repository on GitHub
+
+> ✅  If you want to push a local repository to Github using the Command line, you  have to create an empty online target repository first.
+
+1. Go to [https://github.com](https://github.com).
+2. Click the **“+”** in the top right → **New repository**.
+3. Name your repository (e.g., `my-project`).
+4. Choose **Public** 
+5. **Do not** initialize with a README, `.gitignore`, or license if pushing an existing repo.
+6. Click **Create repository**.
+7. Copy the repo URL (either **HTTPS** or **SSH**) from the next page.
+
+## Connect your local project/folder
+
+For the sake of this exercise, you can create a simple folder with a test file.
+
+```bash
+cd path/to/your/project       # move into your folder
+git init                      # Initialize Git repo if not already done
+git add .                     # Stage all files
+git commit -m "Initial commit"
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+git branch -M main            # Rename default branch to main
+git push -u origin main       # Push code to GitHub
+```
 
 </details>
 
 <details>
-<summary>Activity2 - Setting up and organizing a coding project</summary> 
+<summary>Activity 2 Option 2: Adding a remote using Github Desktop</summary>
 
+
+## 🖱️ Version 2: Using GitHub Desktop
+
+###  Connect/Publish/Push your local folder
+1. Open **GitHub Desktop**.
+2. Go to **File → Add Local Repository**.
+3. Choose your folder and click **Add Repository**.
+4. Click **Publish repository** (top bar).
+5. Fill in name and description.
+6. Choose "Private" if needed.
+7. Click **Publish Repository** — GitHub Desktop sets up the remote and pushes.
+
+
+> ✅ GitHub Desktop automatically connects the local and remote repositories.
+
+</details>
+
+</details>
+
+ <br>
+We will also work on  hands-on exercises to practice good coding practices:<br><br>
+
+<details>
+<summary>Activity 3 - Setting up and organizing a coding project</summary>
 
 # 🧪 Mini Project (Day 2): Analyzing Study Habits and Performance
 
@@ -174,12 +311,8 @@ You can run the provided Jupyter notebook template here:
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-
 > ⚠️ **Warning:** Jupyter notebooks opened directly in the browser **do not save your work!**
 To avoid losing progress, **save a copy to your Google Drive** (if logged into a Google account) or **download a local copy.**
-
-
-
 
 ---
 
@@ -197,6 +330,7 @@ Organize your project like this:
 ├── .gitignore            # Files/folders to ignore in version control
 ├── README.md             # Project overview and how to run it
 ```
+
 > 📌 **Tip**: Never modify the raw data directly. Always save processed data to `data/clean/`.
 
 ---
@@ -205,7 +339,7 @@ Organize your project like this:
 
 We will practice using git in the Jupyter notebook. In Jupyter notebook, you can write system commands with `!` at the beginning of the line.
 
-For example: 
+For example:
 
 ` ! command `
 
@@ -218,14 +352,15 @@ For example:
 `!git status`
 
 ## 📝 Step 3: Create a README.md for your project
+
 Create a README.md file for your project.
 It should include:
+
 - Project title and description
 - Instructions on how to run your scripts
 - Dependencies and setup instructions
 
-
-## 🚫 Step 4: Modify your .gitignre file
+## 🚫 Step 4: Modify your .gitignore file
 
 Edit your .gitignore to exclude raw data and system-specific files.
 Example:
@@ -233,46 +368,100 @@ Example:
 An example could look like:
 
 data/raw/
-__pycache__/
+**pycache**/
 *.ipynb_checkpoints/
 
-
-
-## 💾 Step 5. Commit your code regularly 
+## 💾 Step 5. Commit your code regularly
 
 Use meaningful commit messages:
 
 ! git add .
 ! git commit -m "Initial commit: project structure"
 
-## 🛠️ Step 6: Write modular functions
+## 🛠️ Step 6: Good coding practices
 
-### Step 6.1: clean your data
-Write a function to clean your data one of the cells of the Jupyter notebook.
-Write a function `clean_data.py` in `src`. 
+### Step 6.1: Modularity
 
-In both cases:
+#### 6.1.1 Write a `clean_data` function to clean your data in one of the cells of the Jupyter notebook. (see notebook).
+
+The function should:
+
 - Load the dataset (`data/raw/student_habits_performance.csv`) using `pandas`
 - Handle missing values (e.g., drop rows with NaN)
 - Save the cleaned dataset to `data/clean/cleaned_data.csv`
 
-✨ Tip: Write clear function names and use docstrings to describe what your functions do.
+>✨ Write clear function names and use docstrings to describe what your functions do.
+
+Run the function in the cell of the Jupyter notebook.
+
+#### 6.1.2 Write a `plot_data` function that visualizes study habits, in of the cells of the Jupyter notebook. (see notebook)
+
+The function should:
+
+-  Use `matplotlib` to visualize study habits (choose something nice to plot)
+- Save your figure to results/study_habits.png
+- Include axis labels, a title, and a legend if needed
+
+> ✍️ Add a code comments and docstrings to your plotting function and comment the main steps (e.g., load data, create figure, save figure).
+
+### Step 6.2: Importing and packaging
+
+#### 6.1.2 Put the cleaning function into a file `clean_data.py` in `src`. (see notebook).
+
+#### 6.1.2 Put the plotting function into a file `ploy_data.py` in `src`. (see notebook).
+
+### 6.1.3 Prepare the .py files to be run.
+
+In order to execute the functions from the files in the `src` folders, we need to add two more things:
+
+1. A empty `__init__.py` file to the `src` folder. This makes your folder a **package** and allows for importing functions.
+2. A `__main__` function at the bottom of each file. This allows for arguments to be passed to the function when running the function from the command line.
+
+Create the `__init__.py` file.
+
+Add the following to the clean_data.py file:
+
+```python
+if __name__ == "__main__":
+
+    import sys
+
+    clean_data(sys.argv[1], sys.argv[2]) # adjust name if needed
+    
+```
+
+Add the following to the plot_data.py file
+
+```python
+if __name__ == "__main__":
+
+    import sys
+
+    plot_data(sys.argv[1]) # or change the name if your function has a different name
+```
+
+Now you can import the functions, for example via:
+`from src.clean_data import clean_data`
+
+You can run them after imported, but you can also run them directly via the command line via:
+
+`! python src/clean_data.py input output`
+
 
 If needed, install libraries using:
 
 `!pip install pandas`
 
->  ✨ Tip: Write clear function names and use code comments to describe what your functions do.
 
-## 📊 Step 6.2: Visualize study  habits
-- Create a function that visualizes study habits. Do it again, first in the cell of the Jupyter notebook. Then create a file src/plot_mydata.py for it.
+### 📊 Step 6.2: Visualize study  habits
+
+
+#### 6.1.2 Write a function `plot_data.py` in `src`. (see notebook/Colab)
 
 In both cases:
-- Use `matplotlib` to visualize study habits
-- Save your figure to results/study_habits.png
-- Include axis labels, a title, and a legend if needed
 
-> ✍️ Add a code comments to your plotting function and comment the main steps (e.g., load data, create figure, save figure).
+-
+Run the functions both as part of the code cell and as import into the jupyter notebook.
 
 ## 📝 Step 7: Write a Summary Report
 
@@ -280,6 +469,7 @@ Create a file:
 report/study_habits.md
 
 Your report should:
+
 - Briefly summarize your findings
 - Include your figure (link it using Markdown)
 
@@ -288,11 +478,12 @@ Example of linking a figure in markdown:
 `![Study Habits by Gender](../results/study_habits.png)`
 
 ## ⚙️ Step 8:  Document your environment
+
 Export your code to a requirements.txt file
 
 `!pip freeze > requirements.txt`
 
-## Step 9. Create a make file 
+## Step 9. Create a make file
 
 Create a simple Makefile to automate steps such as cleaning, running analysis, and generating figures.
 
@@ -301,13 +492,15 @@ Example structure:
 `all: clean_data plot_data
 
 clean_data:
-	python src/clean_data.py
+ python src/clean_data.py
 
 plot_data:
-	python src/plot_mydata.py`
+ python src/plot_mydata.py`
 
 ## ✅ Step 10: Final Checklist
+
 Make sure your project:
+
 - Uses a clean and modular folder structure
 - Preserves raw data without modification
 - Contains code with comments
@@ -320,6 +513,7 @@ Make sure your project:
 
 </details>
 
+<br>
 <a target="_blank" href="https://colab.research.google.com/github/likeajumprope/RSE_Juelich/blob/main/day2/Day2.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>

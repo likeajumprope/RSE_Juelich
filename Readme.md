@@ -24,7 +24,6 @@ This is the training respository for the JuDocs course for Research Software Eng
 <details>
 <summary>Day 2</summary>
 
-
 ## 🗓️ **Day 2**
 
 | **Topic** | **Time** | **Duration** |
@@ -79,13 +78,12 @@ This is the training respository for the JuDocs course for Research Software Eng
 ## All material can be found [here]
 
 ## Running examples
+
 Provided examples can be run in Python (Jupyter Notebook + Colab) or Matlab Live scripts (Matlab online).
 If you'd prefer to practice in your own language of choice, you can install a corresponding kernel in Google Colab.
 
-## Introduction to Google Colab:
+## Introduction to Google Colab
 
-Please find [here] an introduction to Google Colab (not part of this course)
+Please find [here](https://colab.research.google.com/?hl=en-GB) an introduction to Google Colab (not part of this course)
 
 (C) Johanna Bayer, 2025
-
-
