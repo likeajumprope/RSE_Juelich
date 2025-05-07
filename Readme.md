@@ -25,7 +25,7 @@ This is the training respository for the JuDocs course for Research Software Eng
 <summary>Day 2</summary>
 
 
-## 🗓️ **Day 2**
+## 🗓️ **Day 2** :)
 
 | **Topic** | **Time** | **Duration** |
 |-----------|----------|--------------|
