@@ -1,4 +1,4 @@
-Welcome to Day 2!
+Welcome to Day 2, Chantal!
 
 Today, we’ll dive into two hands-on exercises to sharpen your collaboration and coding skills:
 
