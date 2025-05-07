@@ -26,7 +26,7 @@ Carefully read the instructions in the notebook. Here is an overview about what 
 
 2. Then you will wrap these assert statements into functions and run them from within the Jupyter notebook.
 
-3. Next, you will create a deccated `test` folder in the root of your `research project folder`.  You will create two files, one for each test function that you have created. You will then run these functions from the Jupyter notebook command line using `pytest`.
+3. Next, you will create a dedicated `test` folder in the root of your `research project folder`.  You will create two files, one for each test function that you have created. You will then run these functions from the Jupyter notebook command line using `pytest`.
 
 4. You will create a Makefile and add the `pytest` command into it. You can now run the tests from the mMakefile.
 
