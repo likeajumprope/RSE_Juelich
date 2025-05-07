@@ -1,0 +1,24 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: osx-arm64
+# created-by: conda 25.1.1
+@EXPLICIT
+https://repo.anaconda.com/pkgs/main/osx-arm64/bzip2-1.0.8-h80987f9_6.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/ca-certificates-2025.2.25-hca03da5_0.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/libcxx-14.0.6-h848a8c0_0.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/libffi-3.4.4-hca03da5_1.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/libmpdec-4.0.0-h80987f9_0.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/ncurses-6.4-h313beb8_0.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/python_abi-3.13-0_cp313.conda
+https://repo.anaconda.com/pkgs/main/noarch/tzdata-2025a-h04d1e81_0.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/xz-5.6.4-h80987f9_1.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/zlib-1.2.13-h18a0788_1.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/expat-2.6.4-h313beb8_0.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/openssl-3.0.16-h02f6b3c_0.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/readline-8.2-h1a28f6b_0.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/tk-8.6.14-h6ba3021_0.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/sqlite-3.45.3-h80987f9_0.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.13.2-h4862095_100_cp313.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/setuptools-75.8.0-py313hca03da5_0.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/wheel-0.45.1-py313hca03da5_0.conda
+https://repo.anaconda.com/pkgs/main/osx-arm64/pip-25.0-py313hca03da5_0.conda
