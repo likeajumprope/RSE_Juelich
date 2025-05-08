@@ -1,8 +1,7 @@
-#  Welcome to **Course Day 4!**
+# Welcome to **Course Day 4!**
 
 Today’s theme: **Open Science, Sharing, and Project Quality**  
 You’ll learn to **license**, **version**, **publish**, and **reflect** on your code!
-
 
 <details>
 <summary>Activity 1 - Create a License & a Version Release</summary>
@@ -11,7 +10,7 @@ You’ll learn to **license**, **version**, **publish**, and **reflect** on your
 
 > 📚 **Goal:** License your project and create a formal version for sharing.
 
-### 📝 Steps:
+### 📝 Steps
 
 1. **Create a License File**
    - In your **fork** of the course repository, create a new file:  
@@ -25,14 +24,16 @@ You’ll learn to **license**, **version**, **publish**, and **reflect** on your
 
 3. **Create a Version Release**
    - Go to your repo ➔ **Releases** ➔ **Draft a new release**.
-   - Tag your release (e.g., `v1.0.0`).
-   - Add a short title and description for your release.
-   - Publish!
+   - Tag your release (e.g., `v0.1.0`) under "Choose your tag".
+   - Add a short title (for example, "Initial Release" ) and description for your release.
+
+   > Attention: You can publish your repository, but once published, a record on Zenodo CANNOT BE RELEASED (only updated/changed). If you don't want your test repo to show up on your Zenodo, don't hit publish, but delete the draft.
+
+   Other
 
 ✅ **Result:** Your project now has a license **and** an official version release!
 
 </details>
-
 
 <details>
 <summary>Activity 2 -Archive Your Project and Create a DOI (Zenodo)</summary>
@@ -41,20 +42,41 @@ You’ll learn to **license**, **version**, **publish**, and **reflect** on your
 
 > 🏛️ **Goal:** Make your project permanently citable.
 
-### 📝 Steps:
+For this task, you will have tp create a **New Repository** on Github.
 
-1. **Create a Zenodo Account**
-   - Sign up at [https://zenodo.org/](https://zenodo.org/).
+# 📝 Steps
 
-2. **Link Zenodo to GitHub**
-   - In Zenodo, go to **Account ➔ GitHub**.
-   - **Authorize access** and **enable your repository** for archiving.
+### 1. **Create a Zenodo Account**
 
-3. **Publish and Generate a DOI**
-   - After your GitHub Release, Zenodo will generate a **DOI** (Digital Object Identifier).
-   - Use it to cite your code like a scientific publication!
+- Go to [https://zenodo.org/](https://zenodo.org/)
+- Click **Sign In** (you can use GitHub or ORCID)
+- Complete your profile for proper citation (name, affiliation, email)
 
-✅ **Result:** Your project is now citable and permanently archived!
+---
+
+### 2. **Link Zenodo to Your GitHub Repository**
+
+- Under your profile, go to the **GitHub tab** in Zenodo:  
+  [https://zenodo.org/account/settings/github/](https://zenodo.org/account/settings/github/)
+- Click **Connect GitHub**
+- Authorize Zenodo on GitHub
+- Your Github repositories should appear
+- Toggle **ON** for the repository you want Zenodo to archive
+
+> Careful: Once you create a release in a monitored repository, it will be archived on Zenodo, and will show up on your record. If you don't want the test repo to be (permanently) archived, stop here.
+You can use the rest of the time to explore repositories on Zenodo.
+
+### 3. **Go back to Github and make a new GitHub Release** (most likely Zenodo will not recognize your previous one)
+
+- On GitHub, go to your repository ➔ **Releases** ➔ **Draft a new release**
+- Add:
+  - **Tag** (e.g., `v1.0.0`)
+  - **Title** (e.g., `Version 1.0.0`)
+  - **Changelog** or release notes (optional)
+
+**A DOI** will be created
+
+- Copy the DOI in Markdown format and go back to Github. Add the DOI to the Readme. Commit.
 
 </details>
 
@@ -65,19 +87,20 @@ You’ll learn to **license**, **version**, **publish**, and **reflect** on your
 
 > 🧠 **Goal:** Reflect together on what makes software truly great.
 
-### 📝 Steps:
+### 📝 Steps
 
 - **Form small groups** (3–6 people).
 
 - One person creates a new Github repository. The other members of the group fork it.
-
 
 - Brainstorm and create a **Checklist** for:
 
   > _"What makes a good code project?"_
 
 💬 **The list could include items such as:**
+
 - Github/Gitlab
+- folder structure and naming
 - Documentation quality
 - Code structure and readability
 - Testing and validation
@@ -89,7 +112,8 @@ You’ll learn to **license**, **version**, **publish**, and **reflect** on your
 ⚡ **Question:**  
 > Did we miss anything important during the course?
 
-**Future** 
+**Future**
+
 - What would you like to learn more about?
 
 Split the work. Work collaboratively on the Checklist. Commit and make pull requests to the main repository.
