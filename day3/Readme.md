@@ -5,8 +5,6 @@ Welcome to Day 3 of the Research Software Engineering Course!
 In this session, you will practice making your research code reproducible, testable and automated.
 You will complete two tasks.
 
-Activity 1: Introduction to Testing.
-Activity 2: Introduction to Github actions
 
 
 <details>
