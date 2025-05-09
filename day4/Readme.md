@@ -81,15 +81,19 @@ You can use the rest of the time to explore repositories on Zenodo.
 </details>
 
 <details>
-<summary>Activity 3 - Group work</summary>
+<summary>Activity 3 - Group work/Implementation</summary>
 
-## 🤝 Activity 3: **Group Work – What Makes a Good Code Project?**
+## 🤝 Activity 3: **Group Work/Implementation**
 
+<details>
+<summary>Option 1: Make a checklist for a good software project (group work option)</summary>
+
+Work with a partner (if available).
 > 🧠 **Goal:** Reflect together on what makes software truly great.
 
 ### 📝 Steps
 
-- **Form small groups** (3–6 people).
+- **Form small groups** (2 people).
 
 - One person creates a new Github repository. The other members of the group fork it.
 
@@ -119,5 +123,26 @@ You can use the rest of the time to explore repositories on Zenodo.
 Split the work. Work collaboratively on the Checklist. Commit and make pull requests to the main repository.
 
 🎤 **Be ready to share your checklist with the full group!**
+</details>
 
+<details>
+<summary>Option 2: Implement some of the here learned topics to your own project</summary>
+
+This could include:
+- Pushing a project to Github
+- Writing tests
+- Refactoring code for more modularity
+- Creating a DOI for a project on Git etc.
+
+Be ready to share your progress at the end of the activity with the group.
+
+Think also about:
+
+⚡ **Question:**  
+> Did we miss anything important during the course?
+
+**Future**
+
+- What would you like to learn more about?
+</details>
 </details>
