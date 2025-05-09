@@ -77,7 +77,9 @@ This repository is versioned: [![DOI](https://zenodo.org/badge/957504815.svg)](h
 
 </details>
 
-## All material can be found [here](Slides)
+## All slides can be found [here](Slides).
+## Day specific activities can be found here:
+
 
 ## Running examples
 
