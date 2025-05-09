@@ -78,7 +78,11 @@ This repository is versioned: [![DOI](https://zenodo.org/badge/957504815.svg)](h
 </details>
 
 ## All slides can be found [here](Slides).
-## Day specific activities and exercises can be found here: [Day 1](day1/Readme.md)
+## Day specific activities and exercises can be found here:
+- [Day 1](day1/Readme.md)
+- [Day 2](day2/Readme.md)
+- [Day 3](day3/Readme.md)
+- [Day 4](day4/Readme.md)
 
 
 ## Running examples
