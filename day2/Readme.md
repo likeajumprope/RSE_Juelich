@@ -1,4 +1,9 @@
+
+
+Today, we’ll dive into two hands-on exercises to sharpen your collaboration and coding skills:
+
 # Welcome to Day 2!
+
 
 Today, we’ll dive into two hands-on exercises to further sharpen your git skills:
 

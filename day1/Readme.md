@@ -1,6 +1,6 @@
 # 💻 Practicing GitHub (Day 1)
 
-Welcome to **Day 1** of our **Research Software Engineering course**!  
+Welcome to the most awesome **Day 1** of our **Research Software Engineering course**!  
 Today, we’ll practice the **foundational skills for collaborating on GitHub**:  
 **Forking, editing, creating issues, and submitting pull requests, and later, branches**.
 
