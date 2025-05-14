@@ -9,7 +9,7 @@ This repository is versioned: [![DOI](https://zenodo.org/badge/957504815.svg)](h
 <details>
 <summary>Day 1</summary>
 
-## 🗓️ **Day 1**
+## 🗓️ **Day 1 (May 6)**
 
 | **Topic** | **Time** | **Duration** |
 |-----------|----------|--------------|
