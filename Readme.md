@@ -1,4 +1,4 @@
-# Research Software Engineering for PhD Students
+# Research Software Engineering for PhD Students e.g. Mark :D
 
 This is the training respository for the JuDocs course for Research Software Engineering (May 6-9, 2025), online & at the Forschungszentrum Juelich, provided by the Digiatl Research Academy, taught by Johanna Bayer.
 
