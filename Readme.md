@@ -1,6 +1,6 @@
 # Research Software Engineering for PhD Students
 
-This is the training respository for the JuDocs course for Research Software Engineering (May 6-9, 2025), online & at the Forschungszentrum Juelich, provided by the Digiatl Research Academy, taught by Johanna Bayer.
+This is the training respository for the JuDocs course for Research Software Engineering (May 6-9, 2025), online & at the Forschungszentrum Juelich, provided by the Digiatl Research Academy, developed and taught by Johanna Bayer.
 
 This repository is versioned: [![DOI](https://zenodo.org/badge/957504815.svg)](https://doi.org/10.5281/zenodo.15370014)
 
